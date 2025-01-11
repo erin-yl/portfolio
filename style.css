@@ -13,18 +13,24 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 1em;
-  }
+  gap: 1.8vw;
+}
   
 .left-links a,
 .right-links a {
   font-family: "Karla", serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-size: 1.125em;
   letter-spacing: .04em;
   text-decoration: none;
   color:#212428;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin: 2.5em 0;
 }
 
 h1 {
@@ -33,6 +39,7 @@ h1 {
   font-weight: 600;
   font-size: 2.5em;
   line-height: 1.2em;
+  margin-bottom: 0;
   color:#212428;
 }
 
@@ -76,5 +83,12 @@ button {
   border: 1px solid #014f86;
   background-color: transparent;
   color:#014f86;
+  align-self: flex-start;
   padding: 1em 2em;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #014f86;
+  color: #FFF;
 }
