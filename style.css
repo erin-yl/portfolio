@@ -1,6 +1,75 @@
 body {
   margin: 4vw;
   max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+}
+
+h1 {
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin: 0;
+  color:#212428;
+}
+
+h2 {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-size: 2.25em;
+  line-height: 1.2em;
+  letter-spacing: .01em;
+  margin: 0;
+  color:#212428;
+}
+
+h3 {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 1.4em;
+  letter-spacing: .01em;
+  margin: 0;
+  color:#212428;
+}
+
+h4 {
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin: 0;
+  color:#212428;
+}
+
+p {
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  line-height: 1.6em;
+  color:#36494e;
+}
+
+button {
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  border: 1px solid #014f86;
+  background-color: transparent;
+  color:#014f86;
+  align-self: flex-start;
+  padding: 1em 2em;
+  margin-top: 2em;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #014f86;
+  color: #FFF;
 }
 
 .header {
@@ -26,69 +95,21 @@ ul {
   color:#212428;
 }
 
-.hero {
+.projects {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
-  margin: 2.5em 0;
+  gap: 3em;
 }
 
-h1 {
-  font-family: "Karla", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-size: 2.5em;
-  line-height: 1.2em;
-  margin-bottom: 0;
-  color:#212428;
+.project-container {
+  display: flex;
+  gap: 2.5em;
 }
 
-h2 {
-  font-family: "Spectral", serif;
-  font-size: 2.25em;
-  line-height: 1.2em;
-  letter-spacing: .01em;
-  color:#212428;
+.projects img{
+  width: 50%;
 }
 
-h3 {
-  font-family: "Spectral", serif;
-  font-size: 1.75em;
-  line-height: 1.4em;
-  letter-spacing: .01em;
-  color:#212428;
-}
-
-h4 {
-  font-family: "Karla", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-size: 1.25em;
-  line-height: 1.4em;
-  color:#212428;
-}
-
-p {
-  font-family: "Karla", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  line-height: 1.6em;
-  color:#36494e;
-}
-
-button {
-  font-family: "Karla", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  border: 1px solid #014f86;
-  background-color: transparent;
-  color:#014f86;
-  align-self: flex-start;
-  padding: 1em 2em;
-  transition-duration: 0.4s;
-}
-
-button:hover {
-  background-color: #014f86;
-  color: #FFF;
+.projects button {
+  margin-top: 1em;
 }
