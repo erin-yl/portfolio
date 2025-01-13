@@ -85,8 +85,7 @@ ul {
   gap: 1.8vw;
 }
   
-.left-links a,
-.right-links a {
+.links a {
   font-family: "Karla", serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -112,4 +111,9 @@ ul {
 
 .projects button {
   margin-top: 1em;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
 }
