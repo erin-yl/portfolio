@@ -8,7 +8,6 @@ I specialize in designing **self-service support platforms** and **in-app help t
 - Creating intuitive user experiences
 - Streamlining complex workflows
 - Engaging customers through thoughtful design
-- Documenting process and decision-making
 
 I document the purpose and evolution of my work as a core part of my problem-solving approach. My goal is to create solutions that are effective, accessible, and enjoyable to use.
 
