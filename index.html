@@ -2,74 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erin's Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&family=Spectral&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Spectral:wght@300;500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="header">
-      <ul class="links">
-        <li><a href="#">Work</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-      <ul class="links">
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Email</a></li>
-      </ul>
-    </div>
+    <header class="header">
+      <nav aria-label="Main navigation">
+        <ul class="links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Social links">  
+        <ul class="links">
+          <li><a href="https://www.linkedin.com/in/erinyl/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/erin-yl" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:erinyinling@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </header>
     
-    <div class="hero">
-      <h1>I am Erin, a UX Designer transitioning to UX Engineering.</h1>
-      <p>I create intuitive solutions that help users navigate their tasks with ease.</p>
-      <button type="button">Resume</button>
-    </div>
+    <main>
+      <section class="hero">
+        <h1>I am Erin, a UX Designer transitioning to UX Engineering.</h1>
+        <p>I create intuitive solutions that help users navigate their tasks with ease.</p>
+        <a href="#" class="button" aria-label="View my resume" target="_blank" rel="noopener">Resume</a>
+      </section>
 
-    <div class="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <img src="images/Project 1.png" alt="Juniper documentation redesign">
-        <div class="project-description">
-          <h4>Juniper documentation redesign</h4>
-          <p>Innovative technical content platform with easy access to information, increasing customer satisfaction by 19% and engagement by 24%.</p>
-          <button type="button">View project</button>
-        </div>
-      </div>
-      <div class="project-container">
-        <img src="images/Project 2.png" alt="Juniper in-product help">
-        <div class="project-description">
-          <h4>Juniper in-product help</h4>
-          <p>Effective guidance for product adoption and ongoing use, enhancing content findability by 28%.</p>
-          <button type="button">View project</button>
-        </div>
-      </div>
-      <div class="project-container">
-        <img src="images/Project 3.png" alt="Juniper operating system identifier">
-        <div class="project-description">
-          <h4>Juniper in-product help</h4>
-          <p>Differentiator for two network operating systems that manage infrastructure, reducing bounce rate by 5%.</p>
-          <button type="button">View project</button>
-        </div>
-      </div>
-      <div class="project-container">
-        <img src="images/Project 4.png" alt="Kai Ming Preschool website">
-        <div class="project-description">
-          <h4>Kai Ming Preschool website</h4>
-          <p>A revamped, dynamic website offering early childhood resources, achieving a 93% satisfaction rate.</p>
-          <button type="button">View project</button>
-        </div>
-      </div>
-    </div>
+      <section id="work" class="projects">
+        <h2>Projects</h2>
 
-    <div class="footer">
-      <ul class="links">
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Email</a></li>
-      </ul>
-    </div>
+        <article class="project-container">
+          <img src="images/Project 1.png" alt="Screenshot of Juniper documentation redesign interface" width="600" height="400">
+          <div class="project-description">
+            <h3>Juniper documentation redesign</h3>
+            <p>Innovative technical content platform with easy access to information, increasing customer satisfaction by 19% and engagement by 24%.</p>
+            <a href="#documentation-redesign" class="button" aria-label="View Juniper documentation redesign project details">View project</a>
+          </div>
+        </article>
+
+        <article class="project-container">
+          <img src="images/Project 2.png" alt="Screenshot of Juniper in-product help tool" width="600" height="400">
+          <div class="project-description">
+            <h3>Juniper in-product help</h3>
+            <p>Effective guidance for product adoption and ongoing use, enhancing content findability by 28%.</p>
+            <a href="#in-product-help" class="button" aria-label="View Juniper in-product help project details">View project</a>
+          </div>
+        </article>
+
+        <article class="project-container">
+          <img src="images/Project 3.png" alt="Screenshot of Juniper operating system identifier interface" width="600" height="400">
+          <div class="project-description">
+            <h3>Juniper operating system identifier</h3>
+            <p>Differentiator for two network operating systems that manage infrastructure, reducing bounce rate by 5%.</p>
+            <a href="#operation-system-identifier" class="button" aria-label="View Juniper operating system identifier project details">View project</a>
+          </div>
+        </article>
+
+        <article class="project-container">
+          <img src="images/Project 4.png" alt="Screenshot of Kai Ming Preschool website homepage" width="600" height="400"">
+          <div class="project-description">
+            <h3>Kai Ming Preschool website</h3>
+            <p>A revamped, dynamic website offering early childhood resources, achieving a 93% satisfaction rate.</p>
+            <a href="#kai-ming-preschool" class="button" aria-label="View Kai Ming Preschool website project details">View project</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav aria-label="Footer navigation">
+        <ul class="links">
+          <li><a href="https://www.linkedin.com/in/erinyl/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/erin-yl" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:erinyinling@gmail.com">Email</a></li>
+        </ul>
+      </nav>  
+    </footer>  
   </body>
 </html>
