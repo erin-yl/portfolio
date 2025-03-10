@@ -1,69 +1,88 @@
+html {
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1.2em + 0.5rem);
+}
+
 body {
-  margin: 4vw;
-  max-width: 1280px;
   display: flex;
   flex-direction: column;
-  gap: 6em;
+  -webkit-font-smoothing: antialiased;
+  margin: 4vw;
+  max-width: 1280px;
+  gap: 6rem;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
 }
 
 h1 {
   font-family: "Karla", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
-  font-size: 2.5em;
-  line-height: 1.2em;
-  margin: 0;
   color:#212428;
+  font-weight: 600;
+  font-size: 2.5rem;
 }
 
 h2 {
   font-family: "Spectral", serif;
-  font-weight: 300;
-  font-size: 2.25em;
-  line-height: 1.2em;
-  letter-spacing: .01em;
-  margin: 0;
   color:#212428;
+  font-weight: 300;
+  font-size: 2.25rem;
+  letter-spacing: .01rem;
 }
 
 h3 {
   font-family: "Spectral", serif;
-  font-weight: 300;
-  font-size: 1.75em;
-  line-height: 1.4em;
-  letter-spacing: .01em;
-  margin: 0;
   color:#212428;
+  font-weight: 300;
+  font-size: 1.75rem;
+  letter-spacing: .01rem;
 }
 
 h4 {
   font-family: "Karla", serif;
   font-optical-sizing: auto;
-  font-weight: 300;
-  font-size: 1.25em;
-  line-height: 1.4em;
-  margin: 0;
   color:#212428;
+  font-weight: 300;
+  font-size: 1.25rem;
 }
 
 p {
   font-family: "Karla", serif;
   font-optical-sizing: auto;
-  font-weight: 300;
-  line-height: 1.6em;
   color:#36494e;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 button {
   font-family: "Karla", serif;
   font-optical-sizing: auto;
   font-weight: 300;
+  font-size: 1rem;
   border: 1px solid #014f86;
   background-color: transparent;
   color:#014f86;
   align-self: flex-start;
-  padding: 1em 2em;
-  margin-top: 2em;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
   transition-duration: 0.4s;
 }
 
@@ -81,28 +100,28 @@ ul {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
   gap: 1.8vw;
 }
   
 .links a {
+  text-decoration: none;
+  color:#212428;
   font-family: "Karla", serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  letter-spacing: .04em;
-  text-decoration: none;
-  color:#212428;
+  font-size: 1rem;
+  letter-spacing: .04rem;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 3rem;
 }
 
 .project-container {
   display: flex;
-  gap: 2.5em;
+  gap: 2.5rem;
 }
 
 .projects img{
@@ -110,7 +129,7 @@ ul {
 }
 
 .projects button {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .footer {
