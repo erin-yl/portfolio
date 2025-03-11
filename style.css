@@ -4,8 +4,6 @@ Reference: https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
 html {
-  font-size: clamp(1rem, 0.88rem + 0.4vw, 1.2rem);
-
   /* Colors */
   --color-text-primary: #212428;
   --color-text-secondary: #36494e; 
@@ -15,13 +13,14 @@ html {
   /* Spacing */
   --spacing-xs: 0.7rem;
   --spacing-sm: 1rem;
-  --spacing-md: 2rem;
-  --spacing-lg: 3rem;
-  --spacing-xl: 6rem;
+  --spacing-md: clamp(1rem, 0.66rem + 1.66vw, 2rem);
+  --spacing-lg: clamp(2rem, 1.66rem + 1.66vw, 3rem);
+  --spacing-xl: clamp(3rem, 2rem + 5vw, 6rem);
   
   /* Typography */
   --font-primary: "Karla", sans-serif;
   --font-secondary: "Spectral", serif;
+  font-size: clamp(1rem, 0.93rem + 0.33vw, 1.2rem);
 }
 
 *, *::before, *::after {
@@ -34,17 +33,20 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   font-family: var(--font-primary), system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 4vw auto;
   width: calc(100% - 8vw);
   max-width: 1280px;
-  gap: var(--spacing-xl);
   color: var(--color-text-primary);
   background-color: var(--color-background);
+}
+
+body, main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
 }
 
 
@@ -103,15 +105,11 @@ h3 {
   border: 1px solid var(--color-accent);
   padding: var(--spacing-xs) var(--spacing-sm);
   margin-top: var(--spacing-md);
-  transition: all 0.4s ease;
+  transition: 0.4s;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   align-self: flex-start;
-}
-
-.hero .button {
-  margin-bottom: var(--spacing-xl);
 }
 
 .button:hover, button:hover,
@@ -133,7 +131,7 @@ ul {
   display: flex;
   list-style: none;
   padding: 0;
-  gap: 1.8vw;
+  gap: var(--spacing-md);
 }
   
 .links a {
@@ -199,25 +197,13 @@ ul {
 @media (max-width: 768px) {
   body {
     margin: 6vw auto;
-    gap: var(--spacing-lg);
   }
 
-  .hero .button {
-    margin-bottom: var(--spacing-lg);
-  }
-  
   .project-container {
     flex-direction: column;
-    gap: var(--spacing-sm);
   }
 
   .projects img {
     width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero .button {
-    margin-bottom: var(--spacing-md);
   }
 }
