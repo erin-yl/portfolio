@@ -4,7 +4,7 @@ Reference: https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
 html {
-  font-size: 100%;
+  font-size: clamp(1rem, 0.88rem + 0.4vw, 1.2rem);
 
   /* Colors */
   --color-text-primary: #212428;
@@ -30,7 +30,6 @@ html {
 
 * {
   margin: 0;
-  line-height: calc(1.2em + 0.5rem);
 }
 
 body {
@@ -40,7 +39,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 4vw auto;
+  width: calc(100% - 8vw);
   max-width: 1280px;
+  line-height: 1.5;
   gap: var(--spacing-xl);
   color: var(--color-text-primary);
   background-color: var(--color-background);
@@ -83,7 +84,7 @@ h2 {
 h3 {
   font-family: var(--font-primary);
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
@@ -180,9 +181,9 @@ ul {
 .projects img {
   width: 50%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
+  vertical-align: top;
 }
-
 
 .footer {
   display: flex;
@@ -195,22 +196,10 @@ ul {
 
 @media (max-width: 768px) {
   body {
-    margin: 6vw;
+    margin: 6vw auto;
     gap: var(--spacing-lg);
   }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-
+  
   .project-container {
     flex-direction: column;
     gap: var(--spacing-sm);
@@ -222,25 +211,6 @@ ul {
 }
 
 @media (max-width: 480px) {
-  .header {
-    flex-direction: column;
-    gap: var(--spacing-md);
-  }
-
-  ul.links {
-    justify-content: center;
-  }
-
-  h1 {
-    font-size: 1.75rem;
-  }
-
-  .button {
-    width: 100%;
-    align-self: center;
-    text-align: center;
-  }
-
   .hero .button {
     margin-bottom: var(--spacing-md);
   }
