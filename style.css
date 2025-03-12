@@ -103,7 +103,7 @@ h3 {
   background-color: transparent;
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-xs);
   margin-top: var(--spacing-md);
   transition: 0.4s;
   cursor: pointer;
