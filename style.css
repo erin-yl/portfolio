@@ -43,7 +43,7 @@ body {
   background-color: var(--color-background);
 }
 
-body, main {
+body, main, #work {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
