@@ -7,7 +7,7 @@ This is a portfolio website showcasing my UX design and engineering skills, buil
 This portfolio is a work in progress. Check back for regular updates as I add new projects and refine the design: https://erin-yl.github.io/portfolio-wip/
 
 ## About Me
-I specialize in designing **self-service support platforms** for enterprise products. I’ve also been exploring **IDE extension development** to provide AI-powered help tools. My work focuses on:
+I specialize in designing **self-service support platforms** for enterprise products. I’ve also been exploring **IDE extension development** to build AI-powered help tools. My work focuses on:
 - Creating intuitive user experiences
 - Streamlining complex workflows
 - Engaging customers through thoughtful design
