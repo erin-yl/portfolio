@@ -110,8 +110,7 @@ h3 {
   align-self: flex-start;
 }
 
-.button:hover, button:hover,
-.button:focus, button:focus {
+.button:hover, button:focus {
   background-color: var(--color-accent);
   color: var(--color-background);
   outline: none;
@@ -142,8 +141,7 @@ ul {
   letter-spacing: .03rem;
 }
 
-.links a:hover,
-.links a:focus {
+.links a:hover, .link a:focus {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
