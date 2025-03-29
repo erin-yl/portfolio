@@ -184,6 +184,12 @@ ul {
   vertical-align: top;
 }
 
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
 .footer {
   display: flex;
   justify-content: center;
