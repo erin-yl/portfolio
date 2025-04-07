@@ -177,7 +177,7 @@ ul {
   flex-direction: column;
 }
 
-.projects img {
+.project-container img {
   width: 50%;
   height: auto;
   object-fit: contain;
@@ -188,6 +188,19 @@ ul {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-sm);
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .footer {
@@ -207,7 +220,11 @@ ul {
     flex-direction: column;
   }
 
-  .projects img {
+  .project-container img {
     width: 100%;
+  }
+
+  .image-container {
+    grid-template-columns: 1fr;
   }
 }
