@@ -7,7 +7,8 @@ html {
   /* Colors */
   --color-text-primary: #212428;
   --color-text-secondary: #36494e; 
-  --color-accent: #014f86;
+  --color-accent-dark: #014f86;
+  --color-accent-light: #eff6fb;
   --color-background: #ffffff;
   
   /* Spacing */
@@ -38,7 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 4vw auto;
-  width: 92vw;
+  width: 88vw;
   max-width: 1280px;
   color: var(--color-text-primary);
   background-color: var(--color-background);
@@ -92,9 +93,6 @@ h3 {
 .button {
   font-weight: 300;
   font-size: 1rem;
-  background-color: transparent;
-  color: var(--color-accent);
-  border: 1px solid var(--color-accent);
   padding: var(--spacing-xs) var(--spacing-sm);
   margin-top: var(--spacing-md);
   transition: 0.4s;
@@ -104,9 +102,27 @@ h3 {
   align-self: flex-start;
 }
 
-.button:hover, button:focus {
-  background-color: var(--color-accent);
+.primary.button {
+  background-color: var(--color-accent-dark);
   color: var(--color-background);
+  border: 1px solid var(--color-accent-dark);
+
+}
+
+.primary.button:hover, button:focus {
+  background-color: var(--color-accent-dark);
+  color: var(--color-background);
+  outline: none;
+}
+
+.secondary.button {
+  background-color: transparent;
+  color: var(--color-accent-dark);
+  border: 1px solid var(--color-accent-dark);
+}
+
+.secondary.button:hover, button:focus {
+  background-color: var(--color-accent-light);
   outline: none;
 }
 
