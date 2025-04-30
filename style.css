@@ -10,6 +10,7 @@ html {
   --color-accent-dark: #014f86;
   --color-accent-light: #eff6fb;
   --color-background: #ffffff;
+  --color-shadow: 205deg 18% 80%;
   
   /* Spacing */
   --spacing-xs: 0.6rem;
@@ -94,36 +95,36 @@ button {
   font-family: inherit;
   font-weight: 300;
   font-size: 1rem;
+  background-color: var(--color-background);
+  color: var(--color-accent-dark);
+  border: 1px solid var(--color-accent-dark);
   padding: var(--spacing-xs) var(--spacing-sm);
   margin-top: var(--spacing-md);
-  transition: 0.4s;
+  transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   align-self: flex-start;
+  position: relative;
+  overflow: hidden;
 }
 
-button.primary {
-  background-color: var(--color-accent-dark);
-  color: var(--color-background);
-  border: 1px solid var(--color-accent-dark);
-}
-
-button.primary:hover, button.primary:focus {
-  background-color: var(--color-accent-dark);
-  color: var(--color-background);
-  outline: none;
-}
-
-button.secondary {
-  background-color: transparent;
-  color: var(--color-accent-dark);
-  border: 1px solid var(--color-accent-dark);
-}
-
-button.secondary:hover, button.secondary:focus {
+button:hover, button:focus {
   background-color: var(--color-accent-light);
-  outline: none;
+  transform: translateY(-2px);
+  box-shadow:
+    0px 0.5px 0.7px hsl(var(--color-shadow) / 0.1),
+    0px 1.8px 2.4px -0.3px hsl(var(--color-shadow) / 0.16),
+    0px 3.8px 5.1px -0.7px hsl(var(--color-shadow) / 0.24),
+    0.1px 8.3px 11.2px -1px hsl(var(--color-shadow) / 0.3);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow:
+    0px 0.5px 0.7px hsl(var(--color-shadow) / 0.1),
+    0px 0.8px 1.1px -0.5px hsl(var(--color-shadow) / 0.18),
+    0px 1.7px 2.3px -1px hsl(var(--color-shadow) / 0.26);
 }
 
 button.disabled {
@@ -165,7 +166,7 @@ ul {
   height: 0.05em;
   background-color: var(--color-accent-dark);
   opacity: 0;
-  transition: opacity 300ms, transform 300ms;
+  transition: all 0.3s ease;
   transform: scale(0);
   transform-origin: center;
 }
