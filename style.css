@@ -119,13 +119,6 @@ h3 {
   margin-bottom: var(--spacing-sm);
 }
 
-.paragraph-focus {
-  font-size: 1.25rem;
-  line-height: 1.65;
-  color: var(--color-text-primary);
-  font-weight: 300;
-}
-
 /* ==========================================================================
    3. INTERACTIVE ELEMENTS (BUTTONS & LINKS)
    ========================================================================== */
