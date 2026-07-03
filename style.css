@@ -119,14 +119,6 @@ h3 {
   margin-bottom: var(--spacing-sm);
 }
 
-.section-lead-text {
-  font-size: 1.15rem;
-  line-height: 1.75;
-  max-width: 72ch;
-  color: var(--color-text-secondary);
-  margin-bottom: var(--spacing-md);
-}
-
 .paragraph-focus {
   font-size: 1.25rem;
   line-height: 1.65;
@@ -296,10 +288,10 @@ ul {
 }
 
 .case-dek {
-  font-family: var(--font-secondary);
-  font-weight: 300;
-  font-size: 1.35rem;
-  color: var(--color-text-secondary);
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
   max-width: 42ch;
 }
 
@@ -338,9 +330,9 @@ ul {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: transparent; /* Removed project accent colors behind images */
-  padding: var(--spacing-xl) 0;
-  margin: var(--spacing-md) 0;
+  background-color: transparent;
+  padding: 0 0 var(--spacing-sm) 0;
+  margin: calc(-1 * var(--spacing-sm)) 0 0 0;
 }
 
 .full-bleed-container img {
@@ -447,6 +439,12 @@ ul {
 .callout-banner p {
   color: var(--color-text-primary);
   font-size: 1.1rem;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--color-case-accent-light);
+  margin: 0;
 }
 
 .stat-flex-row {
