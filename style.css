@@ -8,9 +8,13 @@ html {
   --color-text-secondary: #36494e; 
   --color-accent-dark: #014f86;
   --color-accent-light: #eff6fb;
+  --color-surface-light: #f8f8f9;
   --color-background: #ffffff;
   --color-shadow: 205deg 18% 80%;
-  
+
+  /* Layout */
+  --page-gutter: clamp(3rem, 8vw, 8rem);
+
   /* Spacing */
   --spacing-xs: 0.6rem;
   --spacing-sm: 1rem;
@@ -42,12 +46,19 @@ body {
   color: var(--color-text-primary);
   background-color: var(--color-background);
   
-  margin: 4vw auto;
-  width: 88vw;
-  max-width: 1280px;
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--page-gutter);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
+}
+
+/* Reusable centered, max-width content measure shared by index.html sections */
+.page {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--page-gutter);
 }
 
 /* Isolated full-bleed layout grid system for project pages */
@@ -61,6 +72,7 @@ body.case-os {
     0fr [screen-end];
   justify-content: center;
   row-gap: var(--spacing-xl);
+  column-gap: 0;
   padding: 4vw 0;
   margin: 0 auto;
   width: 100%;
@@ -201,6 +213,12 @@ ul {
 }
 
 .hero {
+  background-color: var(--color-surface-light);
+  margin-top: calc(var(--spacing-md) - var(--spacing-xl));
+  padding: var(--spacing-xl) 0;
+}
+
+.hero-inner {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
@@ -229,13 +247,18 @@ ul {
 }
 
 .project-container img {
-  width: 50%;
+  width: 58%;
   height: auto;
   object-fit: contain;
   vertical-align: top;
 }
 
 #about {
+  background-color: var(--color-surface-light);
+  padding: var(--spacing-xl) 0;
+}
+
+.about-inner {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
@@ -248,7 +271,7 @@ ul {
 .image-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md);
   width: 100%;
 }
 
@@ -367,16 +390,8 @@ ul {
 .figure img {
   width: 100%;
   height: auto;
-  max-width: 1050px;
+  max-width: 1080px;
   border: 1px solid var(--color-case-accent-light);
-}
-
-.figure figcaption {
-  font-size: 0.85rem;
-  color: var(--color-text-secondary);
-  font-style: italic;
-  text-align: center;
-  max-width: 70ch;
 }
 
 /* ==========================================================================
@@ -547,7 +562,7 @@ ul {
    8. RESPONSIVE DESIGN INTERPOLATIONS
    ========================================================================== */
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .case-hero-split, .two-col-unequal, .quote-grid-two, .pain-point-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
@@ -557,7 +572,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-  body { width: 90vw; }
   .project-container { flex-direction: column; }
   .project-container img { width: 100%; }
   .image-container { grid-template-columns: 1fr; }

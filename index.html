@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;600&family=Spectral:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header class="header page">
     <nav aria-label="Main navigation">
       <ul class="links">
         <li><a href="#work">Work</a></li>
@@ -28,14 +28,16 @@
   
   <main>
     <section class="hero">
-      <h1>I'm Erin, a UX Designer/Engineer and Pilot.</h1>
-      <p>I enjoy turning complex systems into intuitive experiences that help people accomplish their goals.</p>
-      <a href="https://drive.google.com/file/d/1QiWrb0I9Tln1lahvdZQLA8X2A1yKy1-5/view?usp=sharing" aria-label="View my resume" target="_blank" rel="noopener">
-        <button>Resume</button>
-      </a>
+      <div class="page hero-inner">
+        <h1>I'm Erin, a UX Designer/Engineer and Pilot.</h1>
+        <p>I enjoy turning complex systems into intuitive experiences that help people accomplish their goals.</p>
+        <a href="https://drive.google.com/file/d/1QiWrb0I9Tln1lahvdZQLA8X2A1yKy1-5/view?usp=sharing" aria-label="View my resume" target="_blank" rel="noopener">
+          <button>Resume</button>
+        </a>
+      </div>
     </section>
 
-    <section id="work">
+    <section id="work" class="page">
       <section class="projects">
         <h2>Design projects</h2>
 
@@ -101,18 +103,20 @@
     </section>
 
     <section id="about">
-      <h2>About me</h2>
-      <p>As a UX Designer/Engineer with a background in Information Science, I love solving complex problems through thoughtful design. At <a href="https://www.juniper.net/" target="_blank" rel="noopener">Juniper Networks</a>, now part of HPE, my work focused on making enterprise networking products easier to learn and adopt. Working at the intersection of design and engineering allows me to build experiences that are both practical and delightful to use.</p>
-      <p>I graduated from the <a href="https://umich.edu/" target="_blank" rel="noopener">University of Michigan</a> with a master's degree in Human-Computer Interaction. Before that, I grew up in Taiwan and received my bachelor's degree from the Department of Library and Information Science at <a href="https://www.ntu.edu.tw/english/" target="_blank" rel="noopener">National Taiwan University</a>.</p>
-      <p>When I'm not coding or designing, you'll find me taking to the skies, enjoying comforting home-cooked meals, or collecting postcards from my travels.</p>
-      <figure class="image-container">
-        <img src="images/home/Aircraft 1.jpeg" alt="Small single-engine airplane flying with landing gear down beneath an overcast sky, approaching an airport with trees and hangars in the background.">
-        <img src="images/home/Aircraft 2.jpeg" alt="Small single-engine airplane flying low over a grassy airfield on takeoff, with taxiways, a windsock, and rolling hills in the background.">
-      </figure>
+      <div class="page about-inner">
+        <h2>About me</h2>
+        <p>As a UX Designer/Engineer with a background in Information Science, I love solving complex problems through thoughtful design. At <a href="https://www.juniper.net/" target="_blank" rel="noopener">Juniper Networks</a>, now part of HPE, my work focused on making enterprise networking products easier to learn and adopt. Working at the intersection of design and engineering allows me to build experiences that are both practical and delightful to use.</p>
+        <p>I graduated from the <a href="https://umich.edu/" target="_blank" rel="noopener">University of Michigan</a> with a master's degree in Human-Computer Interaction. Before that, I grew up in Taiwan and received my bachelor's degree from the Department of Library and Information Science at <a href="https://www.ntu.edu.tw/english/" target="_blank" rel="noopener">National Taiwan University</a>.</p>
+        <p>When I'm not coding or designing, you'll find me taking to the skies, enjoying comforting home-cooked meals, or collecting postcards from my travels.</p>
+        <figure class="image-container">
+          <img src="images/home/Aircraft 1.jpeg" alt="Small single-engine airplane flying with landing gear down beneath an overcast sky, approaching an airport with trees and hangars in the background.">
+          <img src="images/home/Aircraft 2.jpeg" alt="Small single-engine airplane flying low over a grassy airfield on takeoff, with taxiways, a windsock, and rolling hills in the background.">
+        </figure>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer page">
     <nav aria-label="Footer navigation">
       <p>Designed & built by Erin Lee</p>
     </nav>  
