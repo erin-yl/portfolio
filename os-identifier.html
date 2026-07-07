@@ -64,7 +64,7 @@
     <section class="case-section" id="background">
       <p class="section-label">Background</p>
       <h2>Why an identifier was needed</h2>
-      <p>Junos OS and Junos OS Evolved (Evo) are two network operating systems that power Juniper's products. They run similarly, but require different setup processes &mdash; and their documentation lived side by side without a clear way to tell them apart.</p>
+      <p>Junos OS and Junos OS Evolved (Evo) are two network operating systems that power Juniper's products. Although they run similarly, several features require different setup processes. However, their documentation lived side by side without a clear way to tell them apart.</p>
     </section>
 
     <section class="case-section" id="problem">
@@ -73,11 +73,11 @@
       <div class="pain-point-grid">
         <div class="pain-point-item">
           <h3>Research finding</h3>
-          <p>Product teams received negative user feedback about Evo and Junos documentation.</p>
+          <p>Product teams received customer complaints about Evo and Junos content being merged together, causing a drop in the satisfaction score.</p>
         </div>
         <div class="pain-point-item">
-          <h3>User pain points</h3>
-          <p>Merged Evo and Junos content led to confusion and difficulty identifying the correct information.</p>
+          <h3>Pain points</h3>
+          <p>Customers couldn't tell which content applied to their OS, forcing them to manually filter out irrelevant information and spend extra time searching for the right details.</p>
         </div>
       </div>
     </section>
@@ -89,14 +89,13 @@
     <section class="case-section" id="goal-callout">
       <div class="callout-banner">
         <p class="section-label">Goal</p>
-        <p>Differentiate Evo from Junos and highlight relevant information for each OS, increasing customer satisfaction while decreasing bounce rate.</p>
+        <p>Provide an efficient browsing experience that differentiates Evo from Junos and highlights key features for each OS.</p>
       </div>
     </section>
 
     <section class="case-section" id="solution">
       <p class="section-label">Solution at a glance</p>
       <h2>Coherent, color-coded documentation for each OS</h2>
-      <p>The final design carries consistent tabs, colors, and headlines across every subsequent page, so customers always know which operating system's documentation they're reading &mdash; and can switch to the other in one click.</p>
     </section>
 
     <div class="full-bleed-container">
@@ -136,7 +135,13 @@
     <section class="case-section" id="research">
       <p class="section-label">Insights</p>
       <h2>Visual cues facilitate understanding</h2>
-      <p>Early testing with tags, logos, and color-coding showed these cues genuinely helped customers recognize they were reading the correct documentation &mdash; but follow-up interviews surfaced three specific gaps still tripping people up.</p>
+      <p>I collaborated with the brand team to select colors and logos aligned with the brand identity. Then, I determined how best to present these elements on documentation pages with the product team.
+      <p>Survey responses from 48 participants and usability testing showed that these visual cues successfully helped customers recognize they were reading the correct documentation, but follow-up interviews surfaced three specific gaps.</p>
+        <ul class="bulleted-list">
+          <li>50% of participants couldn't find the dropdown menu for switching the OS.</li>
+          <li>Participants were unsure if the mixed content boxes were intentional or a mistake.</li>
+          <li>Participants were confused by the "Junos" label in the breadcrumbs on Evo pages.</li>
+        </ul>
     </section>
 
     <div class="full-bleed-container">
@@ -144,13 +149,14 @@
     </div>
 
     <section class="case-section" id="rescope-text">
-      <p>That led to a rescope: completely separate Junos and Evo content, update documentation titles, move the switch functionality to the top of the page, and show correct labels in breadcrumbs.</p>
+      <p>That led to a rescope: completely separate Junos and Evo content, move the switch functionality to the top of the page, and display correct labels in breadcrumbs.</p>
     </section>
 
     <section class="case-section" id="iteration">
-      <p class="section-label">Switch functionality</p>
-      <h2>Iterating on how to switch between OSes</h2>
-      <p>I explored two directions for the OS switcher &mdash; a button pairing with a bold active state, and a toggle &mdash; before landing on a third option in a later round: a tab design that read clearly at a glance and matched the mental model of switching between two related documents.</p>
+      <p class="section-label">Iteration</p>
+      <h2>Enhancing the switch functionality</h2>
+      <p>I explored two directions for the OS switcher &mdash; a button pairing with a bold active state, and a toggle &mdash; before landing on a third option in a later round: a tab design that matched the mental model of switching between two related documents.</p>
+      <p>We also experimented with distinct banners and color schemes that reflected our branding. To improve accessibility, I proposed using high-contrast colors.</p>
     </section>
 
     <div class="full-bleed-container">
@@ -160,7 +166,20 @@
     <section class="case-section" id="next-steps">
       <p class="section-label">Next steps</p>
       <h2>Where this could go next</h2>
-      <p>Update the remaining product pages for consistency, and use what we learned here to improve the broader documentation structure.</p>
+      <div class="takeaways-grid">
+        <div class="takeaway">
+          <h3>Identifiers in search results</h3>
+          <p>Extend the identifier system to search results, so customers can tell which OS a result belongs to before clicking into it.</p>
+        </div>
+        <div class="takeaway">
+          <h3>Scaling the pattern</h3>
+          <p>Apply the same tab and color-coding pattern to other product pages (e.g., release notes, API docs) for consistency across the broader ecosystem.</p>
+        </div>
+        <div class="takeaway">
+          <h3>Proactive OS detection</h3>
+          <p>Explore proactive OS detection (e.g., based on account or device information) to reduce reliance on manual switching.</p>
+        </div>
+      </div>
     </section>
 
     <nav class="case-footer-nav" aria-label="Case study navigation">
